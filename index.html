@@ -1,0 +1,263 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #1e293b;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #38bdf8;
+    }
+
+    nav a {
+        color: #e2e8f0;
+        text-decoration: none;
+        margin-left: 25px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+        color: #38bdf8;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: #cbd5e1;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #7dd3fc;
+        transform: translateY(-3px);
+    }
+
+    section {
+        padding: 70px 8%;
+    }
+
+    section h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 35px;
+        color: #38bdf8;
+    }
+
+    .about {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        color: #cbd5e1;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 30px;
+        width: 280px;
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid #334155;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        border-color: #38bdf8;
+        box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    .card .icon {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #94a3b8;
+    }
+
+    .contact {
+        text-align: center;
+        background: #1e293b;
+    }
+
+    .contact p {
+        color: #cbd5e1;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f172a;
+        color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin: 0 8px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 17px;
+        }
+    }
+</style>
+
+</head> <body>
+<header>
+    <div class="logo">Poornima</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Poornima</span> 👋</h1>
+        <p>2nd Year Computer Science Engineering Student</p>
+        <a href="#about" class="btn">Explore My Profile</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            Hello! I'm Poornima, a 2nd-year Computer Science Engineering
+            student at JIT, Davanagere. I am interested in technology,
+            programming, and learning new things in the world of computer
+            science.
+        </p>
+    </div>
+</section>
+
+<section id="interests">
+    <h2>My Interests</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Computer Science</h3>
+            <p>
+                Exploring programming, web development and new
+                technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎬</div>
+            <h3>Movies</h3>
+            <p>
+                I enjoy watching movies during my free time and
+                discovering interesting stories.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🍿</div>
+            <h3>Anime</h3>
+            <p>
+                I love watching anime and exploring different
+                characters and storylines.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+        Thanks for visiting my portfolio!
+    </p>
+
+    <a href="mailto:your-email@example.com" class="btn">
+        Contact Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Poornima | CSE Student</p>
+</footer>
+
+</body> </html>
